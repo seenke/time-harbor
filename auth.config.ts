@@ -3,7 +3,6 @@
  * @author azurkurbasic on 4. 01. 24
  */
 import type { NextAuthConfig } from 'next-auth';
-
 export const authConfig = {
     pages: {
         signIn: '/login',

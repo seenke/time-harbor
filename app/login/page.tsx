@@ -12,7 +12,7 @@ export default function Login() {
                     <p className={'font-medium text-white text-5xl mt-3'}>
                         Logging You In
                     </p>
-                    <LoginForm/>
+                    <LoginForm />
                 </div>
                 <div className={'ml-[200px]'}>
                     <LoginCheckList/>
