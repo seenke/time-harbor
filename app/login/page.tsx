@@ -4,7 +4,7 @@ import LoginCheckList from "@/app/ui/non-auth/login/login-check-list";
 export default function Login() {
     return (
         <div className={'flex-col flex max-w5xl'}>
-            <div className={'flex-row flex'}>
+            <div className={'flex-row flex lg:mt-[250px] mt-10'}>
                 <div>
                     <span>
                         Let`s start by

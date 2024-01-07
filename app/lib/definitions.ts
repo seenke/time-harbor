@@ -8,3 +8,14 @@ export type User = {
     email: string;
     password: string;
 };
+
+export type ClockInDbEntry = {
+    id: string;
+    work_date: Date;
+    user_id: string;
+    productivity: number;
+    hours_worked: number;
+    minutes_worked: number;
+    description: string;
+    hourly_wage: string
+}

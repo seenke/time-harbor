@@ -1,29 +1,18 @@
 'use client';
 
-import {
-    UserGroupIcon,
-    HomeIcon,
-    DocumentDuplicateIcon,
-} from '@heroicons/react/24/outline';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from 'clsx';
+import {signOut} from "@/auth";
 
 const links = [
     {
         name: 'Home',
         href: '/home',
-        icon: HomeIcon
     },
     {
-        name: 'Invoices',
-        href: '/home/hours',
-        icon: DocumentDuplicateIcon,
-    },
-    {
-        name: 'Customers',
-        href: '/dashboard/customers',
-        icon: UserGroupIcon
+        name: 'Calendar',
+        href: '/home/calendar',
     },
 ];
 
@@ -39,9 +28,12 @@ export default function NavLinks() {
                         key={link.name}
                         href={link.href}
                         className={clsx(
-                            'h-[48px] text-xl font-light hover:font-medium transition-all',
+                            'h-[48px] text-2xl transition-all',
                             {
                                 'font-bold': pathname === link.href,
+                            },
+                            {
+                                'hover:font-medium': pathname !== link.href
                             }
                         )}
                     >

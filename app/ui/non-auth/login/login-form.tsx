@@ -24,6 +24,7 @@ export default function LoginForm() {
                         className="input input-bordered w-full bg-white text-black"
                         required
                     />
+
                 </label>
 
                 <label className="form-control w-full mt-5">
